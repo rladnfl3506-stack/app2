@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김우리 - 포트폴리오 및 자기소개</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        /* 상단 프로필 헤더 */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        .header h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+        .header p {
+            font-size: 12pt;
+            color: #e0e6ed;
+            font-weight: 300;
+        }
+        
+        /* 메인 콘텐츠 영역 (한 화면에 배치하기 위한 탭/그리드 구조) */
+        .content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .section {
+            background: #fafbfc;
+            border-left: 5px solid #2a5298;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .section h2 {
+            font-size: 14pt;
+            color: #1e3c72;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e1e4e6;
+            padding-bottom: 8px;
+        }
+        .section ul {
+            list-style: none;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+            font-size: 10.5pt;
+            color: #4a5568;
+        }
+        .section ul li strong {
+            color: #1a202c;
+            display: block;
+            font-size: 11pt;
+        }
+        .section ul li span.date {
+            font-size: 9pt;
+            color: #a0aec0;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        /* 기술 스택 배지 방식 */
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 5px;
+        }
+        .badge {
+            background-color: #edf2f7;
+            color: #2d3748;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 9.5pt;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .badge:hover {
+            background-color: #2a5298;
+            color: white;
+        }
+        
+        /* 대화형 인터랙션 스크립트 효과용 버튼 */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fafbfc;
+            border-top: 1px solid #edf2f7;
+        }
+        .btn-contact {
+            background-color: #2a5298;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            font-size: 11pt;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn-contact:hover {
+            background-color: #1e3c72;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 상단 프로필 영역 -->
+    <div class="header">
+        <img src="Gemini_Generated_Image_uhucmuhucmuhucmu.png" alt="프로필 사진" class="profile-img" id="profilePic">
+        <h1>김우리</h1>
+        <p>고객의 목소리에서 비즈니스의 가치를 연결하는 데이터 커넥터</p>
+    </div>
+
+    <!-- 메인 이력 정보 영역 -->
+    <div class="content">
+        <!-- 학력 및 소개 -->
+        <div class="section">
+            <h2>📝 자기소개 & 학력</h2>
+            <ul>
+                <li>
+                    <span class="date">Core Value</span>
+                    <strong>"비즈니스 번역가이자 소통 전문가"</strong>
+                    3년간의 밀착 고객 응대 경험과 AX 데이터 시각화 역량을 결합하여, 고객의 숨은 니즈를 발굴하고 유관 부서와의 완벽한 다자간 조율을 이뤄냅니다.
+                </li>
+                <li style="margin-top: 15px;">
+                    <span class="date">Education</span>
+                    <strong>주요 교육 및 이수 사항</strong>
+                    AX 데이터 분석 및 시각화 과정 수료<br>
+                    공간 및 서비스 설계 포트폴리오 프로젝트 과정 이수
+                </li>
+            </ul>
+        </div>
+
+        <!-- 경력 사항 -->
+        <div class="section">
+            <h2>💼 주요 경력 (Career)</h2>
+            <ul>
+                <li>
+                    <span class="date">3년 경력</span>
+                    <strong>고객 커뮤니케이션 & 실시간 상담 관리</strong>
+                    - 4개 채널 동시 멀티 채팅 상담 및 실시간 불만 케어<br>
+                    - 악성/강성 고객 인입 시 유연하고 전문적인 대응 및 이탈 방지
+                </li>
+                <li>
+                    <span class="date">프로젝트 조율</span>
+                    <strong>다자간 서비스 & 인테리어 설계 조율</strong>
+                    - 배달 서비스 플랫폼 파트너-라이더-소비자 간 이슈 중재<br>
+                    - 한샘 인테리어 가구 설계 및 시공 프로세스 다자간 협업 조율
+                </li>
+            </ul>
+        </div>
+
+        <!-- 핵심 역량 및 보유 기술 -->
+        <div class="section">
+            <h2>🛠 관련 기술 (Skills)</h2>
+            <div class="tech-badges">
+                <span class="badge" onclick="showSkill('고객 경험 관리')">CRM & CS</span>
+                <span class="badge" onclick="showSkill('채널 동시 상담 능력')">Multi-Channel CS</span>
+                <span class="badge" onclick="showSkill('데이터를 활용한 비즈니스 혁신')">AX 데이터 시각화</span>
+                <span class="badge" onclick="showSkill('복잡한 이해관계자 간 중재 및 협업')">다자간 이슈 조율</span>
+                <span class="badge" onclick="showSkill('공간 및 가구 배치 최적화 설계')">인테리어 공간 설계</span>
+                <span class="badge" onclick="showSkill('원활한 팀간 가교 역할 수행')">커뮤니케이션</span>
+            </div>
+        </div>
+
+        <!-- 자격증 및 학력 추가 사항 -->
+        <div class="section">
+            <h2>🏅 자격증 및 역량 (Certificates)</h2>
+            <ul>
+                <li>
+                    <strong>데이터 분석 및 활용 관련 인증</strong>
+                </li>
+                <li>
+                    <strong>CS 리더스 관리사 / 관련 직무 자격</strong>
+                </li>
+                <li>
+                    <strong>공간 설계 및 인테리어 관련 기술 인증</strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 하단 인터랙션 영역 -->
+    <div class="footer">
+        <button class="btn-contact" onclick="contactMe()">Contact Me</button>
+    </div>
+</div>
+
+<script>
+    // 기술 배지 클릭 시 알림 스크립트
+    function showSkill(detail) {
+        alert("핵심 역량 상세: " + detail);
+    }
+
+    // 컨택트 버튼 클릭 시 알림 스크립트
+    function contactMe() {
+        alert("김우리 님께 연결하시겠습니까? \n이메일: contact@example.com \n언제든 환영합니다!");
+    }
+    
+    // 프로필 사진 마우스오버 효과음 등의 확장성을 위한 요소
+    document.getElementById('profilePic').addEventListener('click', function() {
+        alert("안녕하세요! 데이터 커넥터 김우리입니다. 방문해 주셔서 감사합니다.");
+    });
+</script>
+
+</body>
+</html>
